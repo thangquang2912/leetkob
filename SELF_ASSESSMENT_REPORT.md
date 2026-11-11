@@ -2,9 +2,9 @@
 
 Submitted by:
 
-- `<StudentID1>` — `<Full Name 1>`
-- `<StudentID2>` — `<Full Name 2>`
-- `<StudentID3>` — `<Full Name 3>`
+- 23120353 — Trà Nguyễn Quang Thắng
+- 23120394 — Nguyễn Anh Tuấn
+- 23120396 — Phạm Quang Tuấn
 
 Total I claim: 100 / 100
 
