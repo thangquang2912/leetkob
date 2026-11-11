@@ -9,35 +9,35 @@
 
 ---
 
-## 1. Protected `main` Branch Settings & Spending Cap Evidence
+## 1. Protected `main` Branch Settings
 
 - **Protected-branch settings (`main` requires PR + all 4 status checks `lint`, `format`, `typecheck`, `tests` + administrators included)**:
-  - Screenshot: `docs/evidence/branch-protection.png` _(see repository `docs/evidence/` or link below)_
-- **Model API Spending Cap ($5.00 / month cap on dedicated Gemini project)**:
-  - Screenshot: `docs/evidence/spending-cap.png`
+  - Screenshot in repository: [`docs/evidence/branch-protection.png`](./docs/evidence/branch-protection.png)
 
 ---
 
 ## 2. Gate Bites Proof #1 — Blocked PR & Commit That Turned It Green
 
-- **Pull Request stopped by a red check**: `<TODO: Paste PR #1 URL here>`
-- **Red CI Run (failed check blocking merge)**: `<TODO: Paste failing CI run URL here>`
-- **Blocked Merge Screenshot**: `docs/evidence/blocked-pr.png`
-- **Commit that fixed the failure and turned the PR green**: `<TODO: Paste fixing commit SHA / URL here>`
-- **Green CI Run on the PR**: `<TODO: Paste green CI run URL here>`
+- **Pull Request #1 stopped by a red check**: [https://github.com/thangquang2912/leetkob/pull/1](https://github.com/thangquang2912/leetkob/pull/1)
+- **Red Commit (`fb965d1`)**: [https://github.com/thangquang2912/leetkob/commit/fb965d1](https://github.com/thangquang2912/leetkob/commit/fb965d1)
+- **Red CI Run (failed `format` check blocking merge)**: [https://github.com/thangquang2912/leetkob/actions/runs/42946184575/job/130279449252?pr=1](https://github.com/thangquang2912/leetkob/actions/runs/42946184575/job/130279449252?pr=1)
+- **Blocked Merge Screenshot**: [`docs/evidence/blocked-pr.png`](./docs/evidence/blocked-pr.png)
+- **Commit that fixed the failure and turned PR #1 green (`5241559`)**: [https://github.com/thangquang2912/leetkob/commit/5241559bda22e973dbce4ab61a96f462da08fc72](https://github.com/thangquang2912/leetkob/commit/5241559bda22e973dbce4ab61a96f462da08fc72)
+- **Green CI Run on PR #1**: [https://github.com/thangquang2912/leetkob/actions/runs/42946692986/job/130281093643?pr=1](https://github.com/thangquang2912/leetkob/actions/runs/42946692986/job/130281093643?pr=1)
 
 ---
 
 ## 3. Gate Bites Proof #2 — Deliberate Contract Break Caught by CI
 
-- **Pull Request / Branch**: `<TODO: Paste PR #2 URL here>`
-- **Deliberate Contract Break Commit** (changed `DEFAULT_PAGE_SIZE` from `20` to `21` in `src/app.ts` while leaving `docs/contract/review-queue.md` and `test/review-queue.contract.test.ts` untouched): `<TODO: Paste deliberate break commit SHA / URL here>`
-- **Red CI Run where `tests` failed on contract violation**: `<TODO: Paste red contract-break CI run URL here>`
-- **Restore Commit that fixed `src/app.ts` back to `20` and turned CI green**: `<TODO: Paste restore commit SHA / URL here>`
+- **Pull Request #2**: [https://github.com/thangquang2912/leetkob/pull/2](https://github.com/thangquang2912/leetkob/pull/2)
+- **Deliberate Contract Break Commit (`9a7f156`)** (changed `DEFAULT_PAGE_SIZE` from `20` to `21` in `src/app.ts` while leaving `docs/contract/review-queue.md` and `test/review-queue.contract.test.ts` untouched): [https://github.com/thangquang2912/leetkob/commit/9a7f1567a25979e23a10142509260953d9e453d1](https://github.com/thangquang2912/leetkob/commit/9a7f1567a25979e23a10142509260953d9e453d1)
+- **Red CI Run where `tests` failed on contract violation**: [https://github.com/thangquang2912/leetkob/actions/runs/42947353221/job/130283226769?pr=2](https://github.com/thangquang2912/leetkob/actions/runs/42947353221/job/130283226769?pr=2)
+- **Restore Commit on PR #2** (restored `DEFAULT_PAGE_SIZE = 20` in `src/app.ts` and turned CI green): see the second commit on [PR #2](https://github.com/thangquang2912/leetkob/pull/2/commits)
 
 ---
 
 ## 4. CI Run for Submitted Tag `pa2`
 
 - **CI Runs Filtered by Tag `pa2`**: [https://github.com/thangquang2912/leetkob/actions?query=branch%3Apa2](https://github.com/thangquang2912/leetkob/actions?query=branch%3Apa2)
+- **All Workflow Runs**: [https://github.com/thangquang2912/leetkob/actions](https://github.com/thangquang2912/leetkob/actions)
 - **Tag `pa2` Tree**: [https://github.com/thangquang2912/leetkob/tree/pa2](https://github.com/thangquang2912/leetkob/tree/pa2)
