@@ -19,7 +19,7 @@ const POSITIVE_INT_REGEX = /^[1-9][0-9]*$/;
 
 const DEFAULT_PAGE = 1;
 const MAX_PAGE = 1_000_000;
-const DEFAULT_PAGE_SIZE = 21;
+const DEFAULT_PAGE_SIZE = 20;
 const MAX_PAGE_SIZE = 100;
 
 interface ParsedPagination {
