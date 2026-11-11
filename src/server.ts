@@ -24,9 +24,9 @@ function buildDemoTokenMap(): ReadonlyMap<string, Principal> {
     ]);
   }
 
-  const adminToken =   process.env['DEMO_ADMIN_TOKEN']   ;
-  if (  adminToken  ) {
-    entries.push([adminToken, { userId: "admin-1", role: 'admin', classIds: [] }])
+  const adminToken = process.env['DEMO_ADMIN_TOKEN'];
+  if (adminToken) {
+    entries.push([adminToken, { userId: 'admin-1', role: 'admin', classIds: [] }]);
   }
 
   return new Map(entries);
